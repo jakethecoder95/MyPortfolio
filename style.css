@@ -1,6 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers");
 
-button {
-    border: solid 4px white;
-    color: whitesmoke;
-    background: #30308d;
+/*** Navbar ***/
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0 1fr 2fr;
+    
 }
+.logo {
+    font-size: 38px;
+}
+.curly {
+    font-family: "Bangers";
+    color: #00fa2ad5;
+    margin: 0px -3px;
+}
+.letters {
+    font-family: "Bangers";
+    color: #0075fa; 
+}
+nav li {
+    display: inline;
+    list-style: none;
+    margin: 5px 1%;
+}
+
