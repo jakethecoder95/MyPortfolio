@@ -1,18 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers");
 
 /*** Navbar ***/
-.navbar{
-    position: fixed;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0 1fr 2fr;
-    
-}
-.logo {
-    font-size: 38px;
+
+.navbar-header {
+    font-size: 38px !important;
 }
 .curly {
     font-family: "Bangers";
+    display: inline;
     color: #00fa2ad5;
     margin: 0px -3px;
 }
