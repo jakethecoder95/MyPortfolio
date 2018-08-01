@@ -89,7 +89,7 @@ nav .container-fluid {
     60% {opacity: 0;}
     100% {opacity: 1;}
 }
-.jumbotron h1 {
+.jumbotron h1, h2 {
     font-weight: bold;
 }
 .img-brand {
@@ -102,9 +102,41 @@ nav .container-fluid {
     zoom: 50%;
     box-shadow: 0px 10px 40px 10px #444;
 }
-
-@media (max-width: 700px) {
-    .img-brand {
-        zoom: 30%
-    }
+.phone-version {
+    display: none;
 }
+
+  @media (max-width: 1060px) {
+    .jumbotron{
+      height: 40vh
+    }
+    .brand {
+      zoom: 80%;
+    }
+  }
+  
+  @media (max-width: 845px) {
+    .brand, h1{
+      zoom: 75%;
+      top: 26vh;
+    }
+  }
+  
+  @media (max-width: 770px) {
+    .brand h1{
+      zoom: 100%;
+    }
+    .img-brand {
+      zoom: 40%
+    }
+  }
+  @media (max-width: 400px) {
+    .brand, h1 {
+      zoom: 55%;
+      top: 23%;
+    }
+    .brand, p {
+      font-weight: bold !important;
+    }
+  }
+  
