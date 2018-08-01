@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers");
 
 /*** Navbar ***/
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0;
+}
 nav .container-fluid {
     display: grid;
     grid-template-columns: 0px 1fr 40% 2fr;
@@ -37,3 +41,34 @@ nav .container-fluid {
         text-align: left;
     }
 }
+
+/*** Jumbotron ***/
+.jumbotron {
+    width:100%;
+    height: 50vh;
+    display: table;
+    background: linear-gradient(140deg, #0075fa, #00fa2ad5, #0075fa, #00fa2ad5);
+    background-size: 400% 400%;
+    animation-name: background-transition;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes background-transition {
+    0% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 0% 0%; 
+    }
+}
+
+@-webkit-keyframes background-transition {
+    0% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 0% 0%; 
+    }
+}
+
