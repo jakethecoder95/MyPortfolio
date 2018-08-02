@@ -81,7 +81,7 @@ nav .container-fluid {
     left: 25%;
     top: 22vh;
     animation-name: fade-in;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-out;
 }
 @keyframes fade-in {
