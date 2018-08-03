@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers");
 
+/*** Universal ***/
+.container-fluid {
+    width: 75%
+}
+@media (max-width: 700px) {
+  .container-fluid {
+    width: 98%;
+  }
+}
 /*** Navbar ***/
 .navbar {
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
     border-radius: 0;
 }
 nav .container-fluid {
@@ -89,7 +98,7 @@ nav .container-fluid {
     60% {opacity: 0;}
     100% {opacity: 1;}
 }
-.jumbotron h1, h2 {
+.jumbotron h1 {
     font-weight: bold;
 }
 .img-brand {
@@ -102,41 +111,109 @@ nav .container-fluid {
     zoom: 50%;
     box-shadow: 0px 10px 40px 10px #444;
 }
-.phone-version {
-    display: none;
+
+@media (max-width: 1075px) {
+  .jumbotron{
+    height: 40vh
+  }
+  .brand {
+    zoom: 80%;
+  }
 }
 
-  @media (max-width: 1060px) {
-    .jumbotron{
-      height: 40vh
-    }
-    .brand {
-      zoom: 80%;
-    }
+@media (max-width: 845px) {
+  .brand, h1{
+    zoom: 75%;
+    top: 26vh;
   }
-  
-  @media (max-width: 845px) {
-    .brand, h1{
-      zoom: 75%;
-      top: 26vh;
-    }
+}
+
+@media (max-width: 770px) {
+  .brand h1{
+    zoom: 100%;
   }
-  
-  @media (max-width: 770px) {
-    .brand h1{
-      zoom: 100%;
-    }
-    .img-brand {
-      zoom: 40%
-    }
+  .img-brand {
+    zoom: 40%
   }
-  @media (max-width: 400px) {
-    .brand, h1 {
-      zoom: 55%;
-      top: 23%;
-    }
-    .brand, p {
-      font-weight: bold !important;
-    }
+}
+@media (max-width: 400px) {
+  .brand, h1 {
+    zoom: 55%;
+    top: 23%;
   }
-  
+  .brand-p {
+    font-weight: bold !important;
+  }
+}
+@media (max-height: 300px) {
+  .img-brand, .brand-p {
+    display: none;
+  }
+}
+/*** Content ***/
+.main-section {
+    margin-top: 150px;
+    min-height: 500px;
+    max-height: auto;
+}
+
+/* content about section */
+.about {
+    display: flex;
+    margin-top: 250px;
+    margin-bottom: -180px;
+}
+.about-header {
+    margin-right: 100px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 0;
+}
+@media (max-width: 1225px) {
+  .about {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 1100px) {
+    .about {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 700px) {
+    .about {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .about-header {
+        text-align: center;
+        margin:  0 0 40px 0;
+        text-align: jusify;
+    }
+}
+@media (max-width: 550px) {
+  .about {
+    margin-bottom: 30px;
+  }
+  .about p {
+    text-align: justify;
+  }
+}
+
+/* content MyProjects section */
+.my-projects {
+    position: relative;
+    width:100%;
+    min-height: 500px;
+    max-height: auto;
+    background: url("https://img00.deviantart.net/f8f2/i/2010/063/e/f/free___background_1_by_3ric_design.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+} 
+.my-projects h1 {
+    margin-top: 70px;
+}
+
+
+
+ 
