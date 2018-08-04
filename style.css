@@ -154,7 +154,6 @@ nav .container-fluid {
     display: flex;
     margin: 250px 12.5% -180px 12.5%;
     width: 75%;
-
 }
 .about-header {
     margin-right: 100px;
@@ -204,11 +203,14 @@ nav .container-fluid {
     background-size: 100% 100%;
     color: white;
 } 
-.my-projects h1 {
-    margin: 70px auto;
-}
 .project-div {
-    width: 90%
+    width: 90%;
+    margin: 0 5%;
+    
+}
+.my-projects h1 {
+    text-align: center;
+    margin: 70px auto;
 }
 .project-link {
     width: 100%;
@@ -216,17 +218,29 @@ nav .container-fluid {
     background: url("https://codepen.io/jakethecoder95/pen/PBRYEL?editors=1100");
 }
 .project-box {
-    display: block;
-    height: 470px;
-    width: 500px;
-    border: solid 1px white;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 0;
-    text-align: center;
+    margin-bottom: 150px;
 }
-
-
-
-
- 
+.project-box a {
+    color: white;
+}
+.project-img {
+    display: block;
+    border: solid 4px white;
+    color: white;
+    border-bottom: none;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: 40px;
+}
+.project-box h3 {
+    border: solid 4px white;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    margin-top: 0;
+}
