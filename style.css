@@ -42,14 +42,19 @@ nav .container-fluid {
         text-align: left;
     }
 }
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
 
 /*** Jumbotron ***/
 
 /* jumbotron background animation */
 .jumbotron {
+    position: relative;
     width:100%;
-    height: 50vh;
-    display: table;
+    height: 500px;
     background: linear-gradient(140deg, #0075fa, #00fa2ad5, #0075fa, #00fa2ad5);
     background-size: 400% 400%;
     animation-name: background-transition;
@@ -77,10 +82,8 @@ nav .container-fluid {
 
 /* jumbotron branding */
 .brand {
-    position: absolute;
     width: 50%;
-    left: 25%;
-    top: 22vh;
+    margin: 120px 25%;
     animation-name: fade-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
@@ -95,61 +98,63 @@ nav .container-fluid {
 }
 .img-brand {
     background-image: url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/18033365_10211862259607117_2839820417917686277_n.jpg?_nc_cat=0&oh=29c7f175be28d9335d151712fa7441ea&oe=5C12C390");
-    height: 525px;
-    width: 525px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    margin: 70px auto 30px auto;
-    background-position: 45% 15%; 
-    zoom: 50%;
+    margin: 50px auto 30px auto;
+    background-position: 45% 15%;
+    background-size: 370px 550px;
     box-shadow: 0px 10px 40px 10px #444;
 }
 
-@media (max-width: 1075px) {
-  .jumbotron{
-    height: 40vh
+/* tablets and small laptops */
+@media (max-width: 1224px) {
+    .jumbotron {
+        height: 450px;
+    }
+    .brand {
+        margin-top: 50px;
+    }
+    .img-brand {
+      height: 250px;
+      width: 250px;
+      margin: 25px auto 15px auto;
+      box-shadow: 0px 5px 20px 5px #444;
+    }
   }
-  .brand {
-    zoom: 80%;
+  
+/* Phones */
+  @media (max-width: 764px) {
+    .jumbotron {
+        height: 250px;
+    }
+    .brand {
+        margin: 70px 0;
+        width: 100%;
+        transform: scale(0.7)
+    }
+    .img-brand {
+        height: 160px;
+        width: 160px;
+        background-size: 250px 350px;
+    }
+    .p1 {
+      display: none;
+    }
+    .brand-p {
+        font-weight: bold;
+    }
   }
-}
-
-@media (max-width: 845px) {
-  .brand, h1{
-    zoom: 75%;
-    top: 26vh;
+  @media (max-height: 300px) {
+    .img-brand, .brand-p {
+      display: none;
+    }
   }
-}
-
-@media (max-width: 770px) {
-  .brand h1{
-    zoom: 100%;
-  }
-  .img-brand {
-    zoom: 40%
-  }
-}
-@media (max-width: 400px) {
-  .brand, h1 {
-    zoom: 55%;
-    top: 23%;
-  }
-  .brand-p {
-    font-weight: bold !important;
-  }
-}
-@media (max-height: 300px) {
-  .img-brand, .brand-p {
-    display: none;
-  }
-}
-/*** Content ***/
+/*** About Section ***/
 .main-section {
     margin-top: 150px;
     min-height: 500px;
-    max-height: auto;
 }
-
-/* content about section */
 .about {
     display: flex;
     margin: 250px 12.5% -180px 12.5%;
@@ -163,7 +168,12 @@ nav .container-fluid {
 }
 @media (max-width: 1225px) {
   .about {
-    margin-top: 140px;
+    margin: 0 12.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-header {
+      display: none;
   }
 }
 @media (max-width: 1100px) {
@@ -173,14 +183,8 @@ nav .container-fluid {
 }
 @media (max-width: 768px) {
     .about {
-        flex-direction: column;
-        margin: 70px 0 0 0;
+        margin: 35px 0 0 0;
         width: 100%
-    }
-    .about-header {
-        text-align: center;
-        margin:  0 0 40px 0;
-        text-align: jusify;
     }
 }
 @media (max-width: 550px) {
