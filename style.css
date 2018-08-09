@@ -292,23 +292,58 @@ nav .container-fluid {
 }
 
 /*** Skills Div ***/
-.row{
+.skills .row{
     display:flex;
     align-items:center;
     width: 100%;
     margin: 40px 0;
-  }
-  div.progress{
+}
+.skills h1 {
+    margin-top: 100px;
+}
+.skills .progress{
     margin:0;
     margin-top: 10px;
     width: 100%;
-  }
+    background-color: #aaa; 
+}
 
 @media (max-width: 768px) {
-    .row {
+    .skills .row {
         display: inline-block;
     }
     .skills-header {
         display: none;
+    }
+}
+
+/*** Connect ***/
+.connect {
+    margin-top: 100px;
+}
+.connect h1 {
+    margin: 100px 0;
+}
+.connect .row {
+    margin-bottom: 200px;
+}
+.connect .fa {
+    font-size: 7em;
+    height: 100px;
+    color: #2f9f2f;
+    margin-bottom: 30px;
+}
+.fa:hover {
+    text-decoration: none;
+    color: #097209;
+}
+@media (max-width: 768px) {
+    .connect .row {
+        margin-bottom: 100px;
+    }  
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .envelope {
+        margin-left: 17%;
     }
 }
