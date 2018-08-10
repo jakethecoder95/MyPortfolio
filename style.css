@@ -170,6 +170,9 @@ nav .container-fluid {
     display: flex;
     margin: 250px 12.5% -180px 12.5%;
     width: 75%;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
 .about-header {
     margin-right: 100px;
@@ -213,7 +216,7 @@ nav .container-fluid {
 }
 
 
-/* content MyProjects section */
+/* MyProjects section */
 .my-projects {
     position: relative;
     width:100%;
@@ -238,8 +241,10 @@ nav .container-fluid {
 }
 .project-box a {
     color: white;
+    text-decoration: none;
 }
 .project-img {
+    position: relative;
     display: block;
     border: solid 4px white;
     color: white;
@@ -249,6 +254,8 @@ nav .container-fluid {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     margin-right: 40px;
+    padding: 0;
+    overflow-y: hidden;
 }
 .project-box h3 {
     border: solid 4px white;
@@ -259,6 +266,22 @@ nav .container-fluid {
     vertical-align: middle;
     height: 100px;
     margin-top: 0;
+}
+.project-description {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    border-radius: inherit;
+    background-color: rgba(150, 150, 150, 0.9);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.project-img:hover .project-description{
+    transition: 1s;
+    top: 0;
 }
 
 @media (max-width: 1200px) { 
@@ -308,7 +331,7 @@ nav .container-fluid {
     background-color: #aaa; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .skills .row {
         display: inline-block;
     }
