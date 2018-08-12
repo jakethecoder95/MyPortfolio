@@ -56,10 +56,10 @@ nav .container-fluid {
     width:100%;
     height: 500px;
     background: linear-gradient(140deg, #0075fa, #00fa2ad5, #0075fa, #00fa2ad5);
-    background-size: 400% 400%;
-    animation-name: background-transition;
-    animation-duration: 3s;
-    animation-timing-function: ease;
+    background: -webkit-linear-gradient(140deg,  #00fa2a, #0075fa, #00fa2a, #0075fa);
+    background-size: 400% 400%; 
+    animation: background-transition 3s ease;
+    -webkit-animation: background-transition 3s ease;
 }
 
 @keyframes background-transition {
@@ -84,9 +84,8 @@ nav .container-fluid {
 .brand {
     width: 50%;
     margin: 120px 25%;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
+    animation: fade-in 1.5s ease-out;
+    -webkit-animation: fade-in 1.5s ease-out;
 }
 @keyframes fade-in {
     0% {opacity: 0;}
@@ -170,9 +169,8 @@ nav .container-fluid {
     display: flex;
     margin: 250px 12.5% -180px 12.5%;
     width: 75%;
-    animation-name: fade-in;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
+    animation: fade-in 1.5s ease-out;
+    -webkit-animation: fade-in 1.5s ease-out;
 }
 .about-header {
     margin-right: 100px;
@@ -227,7 +225,7 @@ nav .container-fluid {
     background-size: 100% 100%;
     color: white;
 } 
-.project-div {
+.projects-div {
     width: 90%;
     margin: 0 5%;
     
@@ -273,20 +271,26 @@ nav .container-fluid {
     width: 100%;
     top: -100%;
     border-radius: inherit;
-    background-color: rgba(150, 150, 150, 0.9);
+    background-color: rgba(130, 130, 130, 0.95);
     font-size: 30px;
     font-weight: bold;
     padding: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
 }
 
 .project-img:hover .project-description{
     transition: 1s;
+    -webkit-transition: 1s;
     top: 0;
-}
+} 
 
 @media (max-width: 1200px) { 
     .project-box {
         margin-bottom: 100px;
+    }
+    .project-description {
+        font-size: 25px;
     }
 }
 
@@ -302,6 +306,9 @@ nav .container-fluid {
     .project-box {
         margin-bottom: 60px;
     }
+    .project-img {
+        height: 250px !important;
+    }
     .project-div {
         width: 100vw;
         margin: 0;
@@ -311,15 +318,22 @@ nav .container-fluid {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }    
+    } 
+    .project-description {
+        font-size: 17px;
+    }   
 }
 
 /*** Skills Div ***/
-.skills .row{
-    display:flex;
+.panel {
+    box-shadow: none;
+}
+.skills-row{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
     align-items:center;
     width: 100%;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
 }
 .skills h1 {
     margin-top: 100px;
@@ -327,16 +341,36 @@ nav .container-fluid {
 .skills .progress{
     margin:0;
     margin-top: 10px;
+    height: 30px;
     width: 100%;
     background-color: #aaa; 
+    border: none;
+    padding: 0;
 }
-
+.progress-bar {
+    font-size: 20px;
+    padding: 5px;
+}
+.skill-description {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 200px;
+    width: 80%;
+    margin-left: 20%;
+    padding: 60px 17.5%;
+}
 @media (max-width: 992px) {
-    .skills .row {
+    .skills-row {
         display: inline-block;
     }
     .skills-header {
         display: none;
+    }
+    .skill-description {
+        height: auto;
+        padding: 50px 17.5%;
+        width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -370,3 +404,4 @@ nav .container-fluid {
         margin-left: 17%;
     }
 }
+
