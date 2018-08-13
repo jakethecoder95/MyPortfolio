@@ -299,7 +299,7 @@ nav .container-fluid {
         height: 300px !important;
     }
     .project-box h3 {
-        margin-top: -100px;
+        margin-top: -100px;     
     }
 }
 @media (max-width: 768px) { 
@@ -371,6 +371,9 @@ nav .container-fluid {
         padding: 50px 17.5%;
         width: 100%;
         margin-left: 0;
+    }
+    .skills h3 {
+        text-align: center;
     }
 }
 
