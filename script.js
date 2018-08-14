@@ -7,5 +7,5 @@ function alignWidth() {
 }
 
 function disabledMessege() {
-    alert("This link is temporarily disabled until some bugs are fixed.  Thank you for your patience");
+    alert("This link is temporarily disabled until some bugs are fixed.  Thank you for your patience.");
 }
