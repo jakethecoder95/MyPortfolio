@@ -6,6 +6,6 @@ function alignWidth() {
     }
 }
 
-function runCode() {
-    alert("hello world");
+function disabledMessege() {
+    alert("This link is temporarily disabled until some bugs are fixed.  Thank you for your pescience");
 }
