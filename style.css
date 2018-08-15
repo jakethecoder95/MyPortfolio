@@ -27,6 +27,7 @@ nav .container-fluid {
     font-family: "Bangers";
     color: #0075fa;
 }
+
 @media (max-width: 1000px) {
     nav .container-fluid {
         position: relative;
