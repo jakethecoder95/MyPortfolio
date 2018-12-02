@@ -4,6 +4,7 @@
 div, main:focus {
     outline: none;
 }
+button:focus { outline: none; }
 /*** Navbar ***/
 .navbar {
     margin-bottom: 0 !important;
