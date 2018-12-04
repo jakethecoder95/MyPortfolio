@@ -18,7 +18,7 @@
 <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
 
             <!-- Logo -->
             <div class="navbar-header">
@@ -42,17 +42,17 @@
             <div class="collapse navbar-collapse" id="mainNavbar">
 
                 <ul class="nav navbar-nav">
-                    <li class="btn-nav active" onclick="addActiveClass(this)"">
+                    <li class="btn-nav active" onclick="addActiveClass(this)">
                         <a href="#Home">Home</a>
-                    </li>IntersectionObserverEntry
+                    </li>
                     <li class="btn-nav" onclick="addActiveClass(this)">
-                        <a href="#About">About</a>
+                        <a href="#Skills">Skills</a>
                     </li>
                     <li class="btn-nav" onclick="addActiveClass(this)">
                         <a href="#My_Projects">My Projects</a>
                     </li>
                     <li class="btn-nav" onclick="addActiveClass(this)">
-                        <a href="#Skills">Skills</a>
+                        <a href="#About">About</a>
                     </li>
                     <li class="btn-nav" onclick="addActiveClass(this)">
                         <a href="#Connect">Connect</a>
@@ -70,48 +70,212 @@
             <div class="container">
 
                 <div class="text-center brand">
-                    <h1 id="headerSize">J.R. Development</h1>
-                    <p class="brand-p p1">Web Developer, Sacramento CA.</p>
-                    <div>
-                        <div class="img-circle img-brand"></div>
-                    </div>
-                    <p class="brand-p">Jacob Robinson</p>
+                    <h1>Jacob Robinson</h1>
+                    <p class="brand-p">Web Developer, Auburn CA</p>
                 </div>
 
             </div>
         </div>
-        <!-- About Section -->
-        <div id="About" class="container-fluid">
-            <section id="About" class="main-section about">
-                <h1 class="about-header">About</h1>
-                <p>Welcome to my portfolio page! My name is Jacob Robinson I'm 23 years old and I am training to be a web
-                    developer. What got me into programing, strangely enough, was actually my love for the game of Chess.
-                    I was addicted to problem solving and seeking to find the best solutions on the chess board. Problem
-                    soloving is a huge chunk of what a programer does so I thought I might as well give it a shot! In February,
-                    2018 I got
-                    <i>Head First Python</i>, downloaded
-                    <i>SoloLearn</i> and I was on my way. Since then I have built many projects which you can check out in
-                    the next section. I love the front end aspects of Web Development; structureing the pages with HTML5,
-                    styling it with CSS3/Bootstrap, and just making it an over all user friendly environment. My real passion
-                    however, is back end development. Working with data structures, configuring, and finding the best solutions
-                    to make a website function in the most efficient way are the problem soloving aspects of Web Development
-                    that I love.</p>
-            </section>
+
+        <!-- My Skills -->
+        <div class="container">
+            <div id="Skills" class="skills container">
+                <h1 class="skills-header text-center">Skills</h1>
+                <div id="accordion">
+                    <div class="skill-div panel">
+                        <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
+                            <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#js-content">
+                                <div class="col-lg-3">
+                                    <img class="skill-icon" src="http://icons-for-free.com/free-icons/png/512/1269842.png">
+                                </div>
+                                <div class="collapse" id="js-content">
+                                    <div class="skill-description">
+                                        <p class="skill-desctription-p"><b>Javascript</b> is my strongest language and
+                                            I love working with it! Here are a few skills/aspects of JS I have
+                                            experiecne working with:</p>
+                                        <ul>
+                                            <li>Plain Vanilla JS</li>
+                                            <li>ES5 - Current versions</li>
+                                            <li>Async Await</li>
+                                            <li>ChartJS (See Budget Project)</li>
+                                            <li><a href="https://www.food2fork.com/" target="blank">food2fork</a> API</li>
+                                            <li>Webpack</li>
+                                            <li>JSON</li>
+                                            <li>Module Architecture <a href="https://github.com/jakethecoder95/budget-app/blob/master/app.js"
+                                                    target="blank">see</a></li>
+                                            <li>MVC <a href="https://github.com/jakethecoder95/Forkify/tree/master/src/js"
+                                                    target="blank">see</a></li>
+                                            <li>Some experience with nodeJS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    </hr>
+
+                    <div class="skill-div panel">
+
+                        <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
+
+                            <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#python-content">
+                                <div class="col-lg-3">
+                                    <img class="skill-icon" src="data:image/png;base64,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">
+                                </div>
+                                <div class="collapse" id="python-content">
+                                    <div class="skill-description">
+                                        <p>I am strong in <b>HTML 5</b>:</p>
+                                        <ul>
+                                            <li>Responsive webpages</li>
+                                            <li>UI/UX Design</li>
+                                            <li>Boostrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    </hr>
+
+                    <div class="skill-div panel">
+
+                        <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
+
+                            <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#asp-content">
+                                <div class="col-lg-3">
+                                    <img class="skill-icon " src="data:image/png;base64,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">
+                                </div>
+                                <div class="collapse" id="asp-content">
+                                    <div class="skill-description">
+                                        <p>I am strong in <b>HTML 5</b>:</p>
+                                        <ul>
+                                            <li>Responsive webpages</li>
+                                            <li>UI/UX Design</li>
+                                            <li>Boostrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    </hr>
+
+                    <div class="skill-div panel">
+
+                        <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
+
+                            <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#css-content">
+                                <div class="col-lg-3">
+                                    <img class="skill-icon" src="data:image/png;base64,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">
+                                </div>
+                                <div class="collapse" id="css-content">
+                                    <div class="skill-description">
+                                        <p>I am strong in <b>HTML 5</b>:</p>
+                                        <ul>
+                                            <li>Responsive webpages</li>
+                                            <li>UI/UX Design</li>
+                                            <li>Boostrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    </hr>
+
+                    <div class="skill-div panel">
+
+                        <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
+
+                            <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#html-content">
+                                <div class="col-lg-3">
+                                    <img class="skill-icon" src="data:image/png;base64,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">
+                                </div>
+                                <div class="collapse" id="html-content">
+                                    <div class="skill-description">
+                                        <p>I am strong in <b>HTML 5</b>:</p>
+                                        <ul>
+                                            <li>Responsive webpages</li>
+                                            <li>UI/UX Design</li>
+                                            <li>Boostrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    </hr>
+
+                    <div class="skill-div panel">
+
+                        <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
+
+                            <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#other-content">
+                                <div class="col-lg-3">
+                                    <img class="skill-icon icon-other" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCo2SEqG52aaIC-szg33MA96Cf8Z9yPjsqcU9qe8o_Ie6GIKzew">
+                                </div>
+                                <div class="collapse" id="other-content">
+                                    <div class="skill-description">
+                                        <p>I am strong in <b>HTML 5</b>:</p>
+                                        <ul>
+                                            <li>Responsive webpages</li>
+                                            <li>UI/UX Design</li>
+                                            <li>Boostrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <!-- Projects -->
         <div id="My_Projects" class="my-projects">
-            <div class="container-fluid">
-                <h1 class="text-center">My Projects</h1>
+            <div class="container">
+                <h1 class="text-center">Projects <i class="fa fa-paper-plane"></i></h1>
                 <div class="projects-div row">
 
                     <div class="project-box col-lg-4 col-sm-6 col-xs-12">
-                        <a class="btn-primary" href="https://codepen.io/jakethecoder95/full/rraPGa" target="blank">
+                        <a href="https://codepen.io/jakethecoder95/full/rraPGa" target="blank">
                             <div class="project-img img-thumbnail" style="height:400px; width: 500px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(https://qph.fs.quoracdn.net/main-qimg-2bcf8d1ec45106e529bb3a6176467a31); "
                                 alt="project">
                                 <div class="project-description">
-                                    <p>This is a technical documentation page that outlines the principals of ASP.NET Core
-                                        MVC. It is made with html, css and javascript and is part of freeCodeCamp's "Responsive
+                                    <p>This is a technical documentation page that outlines the principals of ASP.NET
+                                        Core
+                                        MVC. It is made with html, css and javascript and is part of freeCodeCamp's
+                                        "Responsive
                                         Web Design Certificate".</p>
                                 </div>
                             </div>
@@ -122,27 +286,31 @@
                     </div>
 
                     <div class="project-box col-lg-4 col-sm-6 col-xs-12">
-                        <a class="btn-primary" href="https://codepen.io/jakethecoder95/full/RJvYbm/" target="_blank">
+                        <a href="https://codepen.io/jakethecoder95/full/RJvYbm/" target="_blank">
                             <div class="project-img img-thumbnail" style="height:400px; width: 500px; background-size: 100% 100%; background-repeat: no-repeat; background-image:
-                                url(https://image.flaticon.com/icons/svg/384/384112.svg); " alt="project ">
+                                    url(https://image.flaticon.com/icons/svg/384/384112.svg); "
+                                alt="project ">
                                 <div class="project-description">
-                                    <p>This is a landing page for Robinson Chiropractic. It is made with html, css and javascript
+                                    <p>This is a landing page for Robinson Chiropractic. It is made with html, css and
+                                        javascript
                                         and is part of freeCodeCamp's "Responsive Web Design Certificate".</p>
                                 </div>
                             </div>
                             <h3 class="text-center img-thumbnail" style="width: 500px; background-color: inherit;">Robinson
                                 Chiropractic</h3>
-
                         </a>
                     </div>
 
                     <div class="project-box col-lg-4 col-sm-6 col-xs-12">
-                        <a class="btn-primary" href="https://codepen.io/jakethecoder95/full/oyyaZV/" target="blank">
+                        <a href="https://codepen.io/jakethecoder95/full/oyyaZV/" target="blank">
                             <div class="project-img img-thumbnail" style="height:400px; width: 500px; background-size: 100% 95%; background-repeat: no-repeat; background-image:
-                                url(https://image.flaticon.com/icons/svg/414/414332.svg); " alt="project ">
+                                    url(https://image.flaticon.com/icons/svg/414/414332.svg); "
+                                alt="project ">
                                 <div class="project-description">
-                                    <p>This is a Chiropractic form page with a professional and user-friendly design. It
-                                        is made with html and css and is part of freeCodeCamp's "Responsive Web Design Certificate".</p>
+                                    <p>This is a Chiropractic form page with a professional and user-friendly design.
+                                        It
+                                        is made with html and css and is part of freeCodeCamp's "Responsive Web Design
+                                        Certificate".</p>
                                 </div>
                             </div>
                             <h3 class="text-center img-thumbnail" style="width: 500px; background-color: inherit;">Chiropractic
@@ -151,11 +319,12 @@
                     </div>
 
                     <div class="project-box col-lg-4 col-sm-6 col-xs-12">
-                        <a class="btn-primary" href="https://codepen.io/jakethecoder95/full/RyXxoP/" target="_blank">
+                        <a href="https://codepen.io/jakethecoder95/full/RyXxoP/" target="_blank">
                             <div class="project-img img-thumbnail" style="height:400px; width: 500px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(&quot;https://external-sjc3-1.xx.fbcdn.net/safe_image.php?d=AQBxum964s6nm1UF&amp;w=960&amp;h=540&amp;url=https%3A%2F%2Fcodepen.io%2Fjakethecoder95%2Fpen%2FRyXxoP%2Fimage%2Flarge.png&amp;sx=0&amp;sy=0&amp;sw=1280&amp;sh=720&amp;_nc_hash=AQAdTv3a9SXG3dFe&quot;); "
                                 alt="project">
                                 <div class="project-description">
-                                    <p>This is a tribute page for Alexander Hamilton. It is made with html and css and is
+                                    <p>This is a tribute page for Alexander Hamilton. It is made with html and css and
+                                        is
                                         part of freeCodeCamp's "Responsive Web Design Certificate".</p>
                                 </div>
                             </div>
@@ -165,12 +334,13 @@
                     </div>
 
                     <div class="project-box col-lg-4 col-sm-6 col-xs-12">
-                        <a class="btn-primary" href="https://codepen.io/jakethecoder95/full/gKRbbz/" target="_blank">
+                        <a href="https://codepen.io/jakethecoder95/full/gKRbbz/" target="_blank">
                             <div class="project-img img-thumbnail" style="height:400px; width: 500px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(https://i.etsystatic.com/17125153/d/il/f41d35/1479917430/il_340x270.1479917430_c46k.jpg?version=0);"
                                 alt="project">
                                 <div class="project-description">
                                     <p>This is a promotional page for the etsy company,
-                                        <i>Just4KicksCreation</i>. It is linked to an etsy account and will someday be used
+                                        <i>Just4KicksCreation</i>. It is linked to an etsy account and will someday be
+                                        used
                                         as the main website where people can buy merchandise.</p>
                                 </div>
                             </div>
@@ -179,11 +349,12 @@
                     </div>
 
                     <div class="project-box col-lg-4 col-sm-6 col-xs-12">
-                        <a class="btn-primary" href="http://jakemanr.pythonanywhere.com/" target="_blank">
+                        <a href="http://jakemanr.pythonanywhere.com/" target="_blank">
                             <div class="project-img img-thumbnail" style="height:400px; width: 500px; background-size: 100% 100%; background-repeat: no-repeat; background-image: url(data:image/jpeg;base64,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);"
                                 alt="project">
                                 <div class="project-description">
-                                    <p>This web application uses Python with Flask to play Rock, Paper, Scissor. It has a
+                                    <p>This web application uses Python with Flask to play Rock, Paper, Scissor. It has
+                                        a
                                         MySQL database that displays all the games played through the extention,
                                         <i>/viewdata</i>.</p>
                                 </div>
@@ -196,210 +367,66 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- My Skills -->
-        <div id="Skills" class="skills container">
-            <h1 class="skills-header text-center">My Skills</h1>
-            <div id="accordion">
-                <div class="skill-div panel">
-
-                    <div class="skills-row text-center">
-
-                        <div class="col-lg-3">
-                            <h3>CSS3</h3>
-                        </div>
-
-                        <button class="progress" data-toggle="collapse" data-parent="#accordion" data-target="#css-content">
-                            <div class="progress-bar progress-bar-info col-lg-9" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-                                style="width:85%">
-                                <span>85%</span>
-                                <span>Click me!</span>
-                            </div>
-                        </button>
-
-                    </div>
-
-                    <div class="collapse" id="css-content">
-                        <div class="skill-description bg-info">
-                            <p class="skill-desctription-p">I have written more CSS than any other language. This is because
-                                there is just so much to know in order to make a presentable webpage. I know Grid and Flexbox
-                                and am very comfortable with this language. </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="skill-div panel">
-
-                    <div class="skills-row text-center">
-
-                        <div class="col-lg-3">
-                            <h3>HTML5</h3>
-                        </div>
-
-                        <button class="progress" data-toggle="collapse" data-parent="#accordion" data-target="#html-content">
-                            <div class="progress-bar progress-bar-info col-lg-9" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                style="width:80%">
-                                <span>80%</span>
-                                <span>Click me!</span>
-                            </div>
-                        </button>
-
-                    </div>
-
-                    <div class="collapse" id="html-content">
-                        <div class="skill-description bg-info">
-                            <p class="skill-desctription-p">HTML is my second strongest coding language simply because I
-                                have spent so much time working with it in order to get the freeCodeCamp front end certificate.
-                                I am very comfortable with the language and I can use bootstrap.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="skills-div panel">
-                    <div class="skills-row text-center">
-
-                        <div class="col-lg-3">
-                            <h3>Python</h3>
-                        </div>
-
-                        <button class="progress collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#python-content">
-                            <div class="progress-bar progress-bar-info col-lg-9" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                style="width:70%">
-                                <span>70%</span>
-                                <span>Click me!</span>
-                            </div>
-                        </button>
-
-                    </div>
-
-                    <div class="collapse panel" id="python-content">
-                        <div class="skill-description bg-info">
-                            <p class="skill-desctription-p">Python is the first language I learned and is the <b>programing</b>
-                                language that I am the most comfortable working with. I am familiar with all the basics of
-                                the language, including working with data types, classes, and OOP. I also know the basics
-                                of flask.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="skills-div panel">
-                    <div class="skills-row text-center">
-
-                        <div class="col-lg-3;">
-                            <h3 class="text-left">Source Control</h3>
-                        </div>
-
-                        <button class="progress" data-toggle="collapse" data-parent="#accordion" data-target="#source-control-content">
-                            <div class="progress-bar progress-bar-info col-lg-9" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                style="width:50%">
-                                <span>50%</span>
-                                <span>Click me!</span>
-                            </div>
-                        </button>
-
-                    </div>
-
-                    <div class="collapse" id="source-control-content">
-                        <div class="skill-description bg-info">
-                            <p class="skill-desctription-p">I love github. This website uses git/github for source control
-                                and I find it incredably useful and relatively easy to learn. I have not used it in a team
-                                envirnment yet but I can see how useful it is.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="skills-div panel">
-                    <div class="skills-row text-center">
-
-                        <div class="col-lg-3">
-                            <h3>Javascript</h3>
-                        </div>
-
-                        <button class="progress" data-toggle="collapse" data-parent="#accordion" data-target="#javascript-content">
-                            <div class="progress-bar progress-bar-info col-lg-9" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
-                                style="width:35%">
-                                <span>35%</span>
-                                <span>Click me!</span>
-                            </div>
-                        </button>
-
-                    </div>
-
-                    <div class="collapse" id="javascript-content">
-                        <div class="skill-description bg-info">
-                            <p class="skill-desctription-p">Javascript is a language I am currently learning to use. I have
-                                completed the <i>SoloLearn</i> Javasctipt course so I know basically how the language works.
-                                I have also written a little bit of it in order to add some cool effects to my webpages.
-                                I am very excited to dive into this language and learn it more thoroughly in the coming mounths
-                                (I am familiar with jQeary as well).</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="skills-div panel">
-                    <div class="skills-row text-center">
-
-                        <div class="col-lg-3">
-                            <h3>C#</h3>
-                        </div>
-
-                        <button class="progress" data-toggle="collapse" data-parent="#accordion" data-target="#cs-content">
-                            <div class="progress-bar progress-bar-info col-lg-9" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                                style="width:30%">
-                                <span>30%</span>
-                                <span>Click me!</span>
-                            </div>
-                        </button>
-
-                    </div>
-
-                    <div class="collapse" id="cs-content">
-                        <div class="skill-description bg-info">
-                            <p class="skill-desctription-p">C# is a backend language I hope to work with a lot more in the
-                                future. I have dipped my to into ASP.NET MVC and have written a little bit of C# there. I
-                                have also completed most of the <i>SoloLearn</i> C# course. I have put off learning this
-                                language for the time being until I understand the front end a bit more.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- About Section -->
+        <div class="container">
+            <div id="About">
+                <section id="About" class="main-section about">
+                    <h1 class="about-header">About</h1>
+                    <p>Welcome to my portfolio page! My name is Jacob Robinson I'm 23 years old and I am training to be
+                        a web
+                        developer. What got me into programing, strangely enough, was actually my love for the game of
+                        Chess.
+                        I was addicted to problem solving and seeking to find the best solutions on the chess board.
+                        Problem
+                        soloving is a huge chunk of what a programer does so I thought I might as well give it a shot!
+                        In February,
+                        2018 I got
+                        <i>Head First Python</i>, downloaded
+                        <i>SoloLearn</i> and I was on my way. Since then I have built many projects which you can check
+                        out in
+                        the next section. I love the front end aspects of Web Development; structureing the pages with
+                        HTML5,
+                        styling it with CSS3/Bootstrap, and just making it an over all user friendly environment. My
+                        real passion
+                        however, is back end development. Working with data structures, configuring, and finding the
+                        best solutions
+                        to make a website function in the most efficient way are the problem soloving aspects of Web
+                        Development
+                        that I love.</p>
+                </section>
             </div>
         </div>
-
         <!-- Connect -->
-        <div id="Connect" class="connect container-fluid bg-success">
-            <h1 class="text-center">Connect with me...</h1>
+        <div id="Connect" class="connect container-fluid">
+            <div class="container">
+                <h1 class="text-center">Connect with me...</h1>
 
-            <div class="container text-center">
-                <div class="row">
+                <div class="text-center">
+                    <div class="row">
 
-                    <div class="connect-icon col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4">
-                        <a class="fa fa-facebook-square" href="https://www.facebook.com/jacob.robinson.79025" target="_blank"></a>
+                        <div class="connect-icon col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4">
+                            <a class="fa fa-facebook-square" href="https://www.facebook.com/jacob.robinson.79025"
+                                target="_blank"></a>
+                        </div>
+
+                        <div class="connect-icon col-lg-2 col-md-2 col-sm-4">
+                            <a class="fa fa-github-square" href="https://github.com/jakethecoder95" target="_blank"></a>
+                        </div>
+
+                        <div class="connect-icon col-lg-2 col-md-2 col-sm-4">
+                            <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jacob-robinson-320210166/"
+                                target="_blank"></a>
+                        </div>
+
+                        <div class="envelope connect-icon col-lg-2 col-md-2 col-sm-4 offset-sm-2">
+                            <a class="fa fa-envelope-square" href="mailto:95jacob07@gmail.com"></a>
+                        </div>
+
+                        <div class="connect-icon col-lg-2 col-md-2 col-sm-4">
+                            <a class="fa fa-phone-square" href="tel:530-401-8932"></a>
+                        </div>
+
                     </div>
-
-                    <div class="connect-icon col-lg-2 col-md-2 col-sm-4">
-                        <a class="fa fa-github-square" href="https://github.com/jakethecoder95" target="_blank"></a>
-                    </div>
-
-                    <div class="connect-icon col-lg-2 col-md-2 col-sm-4">
-                        <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jacob-robinson-320210166/" target="_blank"></a>
-                    </div>
-
-                    <div class="envelope connect-icon col-lg-2 col-md-2 col-sm-4 offset-sm-2">
-                        <a class="fa fa-envelope-square" href="mailto:95jacob07@gmail.com"></a>
-                    </div>
-
-                    <div class="connect-icon col-lg-2 col-md-2 col-sm-4">
-                        <a class="fa fa-phone-square" href="tel:530-401-8932"></a>
-                    </div>
-
                 </div>
             </div>
 
@@ -410,7 +437,7 @@
             <div class="container">
 
                 <div class="navbar-text pull-left" style="margin-top: 20px;">
-                    <p class="fa fa-copyright">Copyright JR Development 2018</p>
+                    <p class="fa fa-copyright">Copyright Jacob Robinson 2018</p>
                 </div>
 
             </div>
