@@ -4,6 +4,10 @@
 div, main:focus {
     outline: none;
 }
+@media (min-width: 993px) {
+    .cushion { padding: 0 6.15%; }
+    .cushion .navbar-header { margin-left: 10px;}
+}
 button:focus { outline: none; }
 /*** Navbar ***/
 .navbar {
@@ -170,8 +174,6 @@ button:focus { outline: none; }
     display: flex;
     margin: 250px 12.5% -180px 12.5%;
     width: 75%;
-    animation: fade-in 1.5s ease-out;
-    -webkit-animation: fade-in 1.5s ease-out;
 }
 .about-header {
     margin-right: 100px;
@@ -339,37 +341,96 @@ button:focus { outline: none; }
     width: 100%;
     margin: 10px 0 0 0;
 }
-.skills h1 {
-    margin-top: 50px;
-}
-.skills .progress{
-    margin:0;
-    margin-top: 10px;
-    height: 30px;
-    width: 100%;
-    background-color: #aaa; 
-    border: none;
-    padding: 0;
-}
 .progress-bar {
     font-size: 20px;
     padding: 5px;
 }
-.skill-description {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 200px;
-    width: 90%;
-    margin-left: 5%;
-    padding: 60px 17.5%;
-}
 .active-arrow {
     transform: rotate(180deg);
 }
+.skill-icon { 
+    width: 150px;
+    height: 150px;
+}
+.fa-angle-down {
+    font-size: 100px;
+    color: rgba(10, 10, 10, 0.2);
+}
+@media (min-width: 993px) {
+    .skills { margin: 40px 0 80px 0; }
+    .skill-div { cursor: pointer; }
+    .skill-div:hover .fa-angle-down { 
+        color: rgba(10, 10, 10, 0.4);
+        animation:         floating 3s ease-out infinite;
+        -webkit-animation: floating 3s ease-out infinite;
+    }
+    @keyframes floating {
+        15%  { transform: translateY(17px);  }
+        50% { transform: translateY(0);     }
+    }
+    .row-container {
+        position: relative;
+        width: 319.75%;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: 1fr 162.2px 1fr;
+        grid-template-rows: 1fr;
+        padding-right: 0px;
+    }
+    .skill-description {
+        font-size: 17px;
+        width: 50%;
+        margin: 30px 25%;
+        text-align: left;
+        animation: fade-in 1.2s ease-out;
+        -webkit-animation: fade-in .5s ease-out;
+    }
+    .collapse { grid-column: 1 / span3; }
+    .icon-container { 
+        position: relative;
+        top: 0;
+        text-align: left; 
+        margin-left: -30px; 
+    }
+    .arrow-container { 
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 35px;
+     }
+}
+@media (max-width: 1200px) {
+    .row-container { 
+        width: 263.5%; 
+    }
+    
+    .icon-container-asp { margin: auto 73px auto -120px; }
+    .icon-container-css { margin: auto 90px auto -120px; } 
+   
+}
+@media (min-width: 1201px) { 
+    .row-container { width: 319.75%; }
+} 
+
 @media (max-width: 992px) {
+    .skill-div { cursor: pointer; }
+    .skill-div:hover .fa-angle-down { 
+        color: rgba(10, 10, 10, 0.4);
+        animation:         floating 3s ease-out infinite;
+        -webkit-animation: floating 3s ease-out infinite;
+    }
+    @keyframes floating {
+        15%  { transform: translateY(10px);  }
+        50% { transform: translateY(0);     }
+    }  
+    .skills { margin-bottom: 60px; }
+    .skill-div {
+        position: relative;
+    }
     .fa-angle-down {
-        color: rgba(10, 10, 10, 0.2);
         font-size: 40px;
+        text-align: center;
     }
     .skills-row {
         display: inline-block;
@@ -379,11 +440,11 @@ button:focus { outline: none; }
         text-align: left;
         padding: 50px 17.5%;
         width: 100%;
-        margin-left: 0;
     }
     .skill-icon { 
         width: 100px;
         height: 100px;
+        margin-left: 0;
     }
     .skills h1 { 
         display: none;
@@ -391,7 +452,19 @@ button:focus { outline: none; }
     .icon-other {
         width: 140px;
         height: 140px;
+        margin-left: none;
     }
+    hr { margin-top: 50px;}
+    .arrow-container { 
+        position: absolute;
+        width:    20%;
+        left:     40%;
+        bottom:   -40px;
+    }
+    .skills-header-sub { display: none; }
+    .row-container { width: 100%; }
+    .icon-container-asp { margin: auto }
+    .icon-container-css { margin: auto }
 }
 
 /*** Connect ***/
@@ -400,16 +473,21 @@ button:focus { outline: none; }
     background:  #bedcfd5b;
 }
 .connect h1 {
-    margin: 100px 0;
+    margin: 50px 0;
 }
 .connect .row {
-    margin-bottom: 200px;
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    grid-template-columns: 0 1fr 1fr 1fr 1fr;
+    padding-left: 10%;
+    margin-bottom:50px;
 }
 .connect .fa {
     font-size: 7em;
     height: 100px;
     color:  #0075fa91;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .connect .fa:hover {
     text-decoration: none;
@@ -418,11 +496,20 @@ button:focus { outline: none; }
 @media (max-width: 768px) {
     .connect .row {
         margin-bottom: 100px;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        margin-bottom: 30px;
     }  
+    .connect .fa { 
+        font-size: 5em;
+        height: 60px;
+    }
+    .connect h1 {
+        margin: 30px 0;
+        font-size: 28px;
+    }
 }
 @media (max-width: 992px) and (min-width: 768px) {
-    .envelope {
-        margin-left: 17%;
-    }
+    .connect .row { margin-left: 5.5%; }
 }
 

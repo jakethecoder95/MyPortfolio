@@ -55,9 +55,10 @@ function addActiveClass(elem){
     elem.classList.add('active');
 }
 
-document.querySelector('.skill-div').addEventListener('click', () => {
-  //document.querySelector('.skill-div').lastElementChild.lastElementChild.lastElementChild.classList.toggle('active-arrow');
-});
+const toggleArrowDirection = (e) => {
+  e.lastElementChild.lastElementChild.classList.toggle('active-arrow'); 
+}
 
-const toggleArrowDirection = (e) => e.lastElementChild.lastElementChild.classList.toggle('active-arrow');
-
+const toggleArrowDirectionSib = (e) => {
+  e.previousSibling.previousSibling.click();
+}
