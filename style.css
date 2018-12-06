@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+@import url("https://fonts.googleapis.com/css?family=Bree Serif");
+@import url("https://fonts.googleapis.com/css?family=Goblin One");
+@import url("https://fonts.googleapis.com/css?family=Faster One");
 
 /*** Universal ***/
 div, main:focus {
@@ -6,7 +10,7 @@ div, main:focus {
 }
 @media (min-width: 993px) {
     .cushion { padding: 0 6.15%; }
-    .cushion .navbar-header { margin-left: 10px;}
+    .cushion .navbar-header { margin-left: 10px; }
 }
 button:focus { outline: none; }
 /*** Navbar ***/
@@ -172,7 +176,7 @@ button:focus { outline: none; }
 }
 .about {
     display: flex;
-    margin: 250px 12.5% -180px 12.5%;
+    margin: 170px 12.5% -230px 12.5%;
     width: 75%;
 }
 .about-header {
@@ -181,14 +185,22 @@ button:focus { outline: none; }
     text-align: right;
     margin-top: 0;
 }
+.about p {
+    font-size: 19px;
+}
 @media (max-width: 1225px) {
   .about {
-    margin: 0 12.5%;
+    margin: 15px 12.5%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .about-header {
-      display: none;
+      margin-right: 0;
+      margin-bottom: 40px;
+  }
+  .about p {
+      font-size: 17px;
   }
 }
 @media (max-width: 1100px) {
@@ -322,7 +334,7 @@ button:focus { outline: none; }
 }
 
 /*** Skills Div ***/
-.skills {
+#Skills {
     animation: fade-in 1.5s ease-out;
     -webkit-animation: fade-in 1.5s ease-out;
 }
@@ -360,13 +372,26 @@ button:focus { outline: none; }
     .skills { margin: 40px 0 80px 0; }
     .skill-div { cursor: pointer; }
     .skill-div:hover .fa-angle-down { 
-        color: rgba(10, 10, 10, 0.4);
+        color:           rgba(10, 10, 10, 0.4);
         animation:         floating 3s ease-out infinite;
         -webkit-animation: floating 3s ease-out infinite;
     }
     @keyframes floating {
         15%  { transform: translateY(17px);  }
         50% { transform: translateY(0);     }
+    }
+    .skills-title {
+        position: absolute;
+        left: 150px;
+        font-family: 'Bungee', 'Bree Serif', Helvetica;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .skills-title h1 {
+        font-size: 100px;
+        margin-bottom: 30px;
+        color: rgba(10, 10, 10, .1)
     }
     .row-container {
         position: relative;
@@ -415,6 +440,7 @@ button:focus { outline: none; }
 
 @media (max-width: 992px) {
     .skill-div { cursor: pointer; }
+    .skills-title { display: none; }
     .skill-div:hover .fa-angle-down { 
         color: rgba(10, 10, 10, 0.4);
         animation:         floating 3s ease-out infinite;
