@@ -281,6 +281,9 @@ button:focus { outline: none; }
         padding: 7px;
         margin-bottom: 50px;
     }
+    .project-box img {
+        min-height: 210px;
+    }
     .project-box p {
         font-size: 15px;
     }
