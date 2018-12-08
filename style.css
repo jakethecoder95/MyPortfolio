@@ -239,7 +239,7 @@ button:focus { outline: none; }
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: white;
-    padding: 0;
+    padding-bottom: 80px;
 } 
 .projects h1 {
     text-align: center;
@@ -249,18 +249,14 @@ button:focus { outline: none; }
     display: grid;
     justify-content: center;
     width: 100%;
-    padding: 0 20px;
 }
 .project-box {
-    border: solid 2px #ccc;
+    border: solid 3px rgba(204, 204, 204, 0.698);
     transition: 200ms;
     cursor: pointer;
     padding: 7px;
-    width: 300px;
-    min-height: 430px;
-    margin-bottom: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    width: 350px;
+    min-height: 470px;
 }
 .project-box:hover {
      border: solid 3px white;
@@ -268,7 +264,7 @@ button:focus { outline: none; }
 .project-img { position: relative; }
 .projects img {
     width: 100%;
-    height: 220px;
+    height: 275px;
 }
 .project-links {
     position: absolute;
@@ -302,19 +298,20 @@ button:focus { outline: none; }
     .projects-div {
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-between;
-        padding-left: 0;
+        grid-column-gap: 40px;
+        grid-row-gap:    50px;
+        padding: 0;
     }
 }
 @media (max-width:765px) {
     .project-box {
-        grid-template-columns: 1fr;
         width: 270px;
         min-height: 400px;
         padding: 7px;
         margin-bottom: 50px;
     }
     .project-box img {
-        min-height: 210px;
+        height: 220px;
     }
 }
 /*** Skills Div ***/
@@ -341,11 +338,14 @@ button:focus { outline: none; }
     transform: rotate(180deg);
 }
 .skill-icon { 
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+}
+.skills h1 {
+    font-size: 30px;
 }
 .fa-angle-down {
-    font-size: 100px;
+    font-size: 80px;
     color: rgba(10, 10, 10, 0.2);
 }
 @media (min-width: 993px) {
@@ -360,26 +360,13 @@ button:focus { outline: none; }
         15%  { transform: translateY(17px);  }
         50% { transform: translateY(0);     }
     }
-    .skills-title {
-        position: absolute;
-        left: 150px;
-        font-family: 'Bungee', 'Bree Serif', Helvetica;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 35px;
-    }
-    .skills-title h1 {
-        font-size: 100px;
-        margin-bottom: 30px;
-        color: rgba(10, 10, 10, .1)
-    }
     .row-container {
         position: relative;
         width: 319.75%;
         display: grid;
         justify-content: space-between;
         align-items: center;
-        grid-template-columns: 1fr 162.2px 1fr;
+        grid-template-columns: 1fr 235.5px 1fr;
         grid-template-rows: 1fr;
         padding-right: 0px;
     }

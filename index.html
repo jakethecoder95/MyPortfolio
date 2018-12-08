@@ -19,48 +19,46 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="cushion">
 
-                <!-- Logo -->
-                <div class="navbar-header">
+            <!-- Logo -->
+            <div class="navbar-header">
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#Home" class="navbar-brand">
-                        <span class="curly">{ </span>
-                        <span class="letters">JR</span>
-                        <span class="curly">}</span>
-                    </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#Home" class="navbar-brand">
+                    <span class="curly">{ </span>
+                    <span class="letters">JR</span>
+                    <span class="curly">}</span>
+                </a>
 
-                </div>
+            </div>
 
-                <div></div>
+            <div></div>
 
-                <!-- Menu Items -->
-                <div class="collapse navbar-collapse" id="mainNavbar">
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
 
-                    <ul class="nav navbar-nav">
-                        <li class="btn-nav active" onclick="addActiveClass(this)">
-                            <a href="#Home">Home</a>
-                        </li>
-                        <li class="btn-nav" onclick="addActiveClass(this)">
-                            <a href="#Skills">Skills</a>
-                        </li>
-                        <li class="btn-nav" onclick="addActiveClass(this)">
-                            <a href="#My_Projects">My Projects</a>
-                        </li>
-                        <li class="btn-nav" onclick="addActiveClass(this)">
-                            <a href="#About">About</a>
-                        </li>
-                        <li class="btn-nav" onclick="addActiveClass(this)">
-                            <a href="#Connect">Connect</a>
-                        </li>
-                    </ul>
+                <ul class="nav navbar-nav">
+                    <li class="btn-nav active" onclick="addActiveClass(this)">
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li class="btn-nav" onclick="addActiveClass(this)">
+                        <a href="#Skills">Skills</a>
+                    </li>
+                    <li class="btn-nav" onclick="addActiveClass(this)">
+                        <a href="#My_Projects">My Projects</a>
+                    </li>
+                    <li class="btn-nav" onclick="addActiveClass(this)">
+                        <a href="#About">About</a>
+                    </li>
+                    <li class="btn-nav" onclick="addActiveClass(this)">
+                        <a href="#Connect">Connect</a>
+                    </li>
+                </ul>
 
-                </div>
             </div>
         </div>
     </nav>
@@ -81,7 +79,7 @@
 
         <!-- My Skills -->
         <div  id="Skills" class="container">
-            <div class="skills cushion">
+            <div class="skills">
                 <div class="skill-div panel" data-toggle="collapse" data-target="#js-content">
                     <div class="skills-row text-center" onclick="toggleArrowDirection(this)">
                         <div class="collapsed row-container">
@@ -290,105 +288,103 @@
     <!-- Projects -->
     <div id="My_Projects" class="projects">
         <div class="container">
-            <div class="cushion">
-                <h1 class="text-center">Projects <i class="fa fa-paper-plane"></i></h1>
+            <h1 class="text-center">Projects <i class="fa fa-paper-plane"></i></h1>
 
-                <div class="projects-div">
+            <div class="projects-div">
 
-                    <div>
-                        <div class="project-box">
-                            <a href="https://forkifi.github.io/" target="blank">
-                                <div class="project-img">
-                                    <img src="img/forkify.png" />
-                                    <div class="project-links">
-                                        <a class="view-link" href="https://forkifi.github.io/" target="blank">View</a>
-                                        <a class="code-link" href="https://github.com/jakethecoder95/forkify" target="blank">Code</a>
-                                    </div>
+                <div>
+                    <div class="project-box">
+                        <a href="https://forkifi.github.io/" target="blank">
+                            <div class="project-img">
+                                <img src="img/forkify.png" />
+                                <div class="project-links">
+                                    <a class="view-link" href="https://forkifi.github.io/" target="blank">View</a>
+                                    <a class="code-link" href="https://github.com/jakethecoder95/forkify" target="blank">Code</a>
                                 </div>
+                            </div>
 
-                                <div class="project-des">
-                                    <h3>Forkify</h3>
-                                    <p>Recipe search engine that allows the user to EASILY search new recipes, save their favorites, and create/save a shopping list. Mobile friendly version coming soon.</p>
-                                </div>
-                            </a>
-                        </div>
+                            <div class="project-des">
+                                <h3>Forkify</h3>
+                                <p>Recipe search engine that allows the user to EASILY search new recipes, save their favorites, and create/save a shopping list. Mobile friendly version coming soon.</p>
+                            </div>
+                        </a>
                     </div>
-
-                    <div>
-                        <div class="project-box">
-                            <a href="http://mymoneycharts.com/" target="blank">
-                                <div class="project-img">
-                                    <img src="img/budgety.png" />
-                                    <div class="project-links">
-                                        <a class="view-link" href="http://mymoneycharts.com/" target="blank">View</a>
-                                        <a class="code-link" href="https://github.com/jakethecoder95/budget-app" target="blank">Code</a>
-                                    </div>
-                                </div>
-
-                                <div class="project-des">
-                                    <h3>Budgit App</h3>
-                                    <p>Budget calculator that uses ChartJS to visualize your spending. This version uses local storage to save ones budget. Mobile friendly version coming soon.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="project-box">
-                            <a href="https://github.com/jakethecoder95/Budgify/tree/master/Budgify" target="blank">
-                                <div class="project-img">
-                                    <img src="img/budgety-asp.png" />
-                                    <div class="project-links">
-                                        <a class="code-link" href="https://github.com/jakethecoder95/Budgify/tree/master/Budgify" target="blank">Code</a>
-                                    </div>
-                                </div>
-
-                                <div class="project-des">
-                                    <h3>ASP.NET Budget App</h3>
-                                    <p>A new and improved version. All the same features but it is now connected to a SQL database so users can login and access their budget anywhere. I am working to get this published, but the code is working.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="project-box">
-                            <a href="https://codepen.io/jakethecoder95/full/rraPGa" target="blank">
-                                <div class="project-img">
-                                    <img src="img/asp-net-core.png" />
-                                    <div class="project-links">
-                                        <a class="view-link" href="https://codepen.io/jakethecoder95/full/rraPGa" target="blank">View</a>
-                                        <a class="code-link" href="https://codepen.io/jakethecoder95/pen/rraPGa" target="blank">Code</a>
-                                    </div>
-                                </div>
-
-                                <div class="project-des">
-                                    <h3>ASP.NET Core Doc.</h3>
-                                    <p>This is my techinal documentation project through <a href="https://www.freecodecamp.org/" target="blank">freecodecamp.org</a>'s Responsive Web Design Certificate.  This page is mobile and desktop friendly.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>  
-
-                    <div>
-                        <div class="project-box">
-                            <a href="http://jakemanr.pythonanywhere.com/" target="blank">
-                                <div class="project-img">
-                                    <img src="img/rps.png" />
-                                    <div class="project-links">
-                                        <a class="view-link" href="http://jakemanr.pythonanywhere.com/" target="blank">View</a>
-                                    </div>
-                                </div>
-
-                                <div class="project-des">
-                                    <h3>Rock, Paper, Scissors</h3>
-                                    <p>Flask web application that plays rock, paper, scissors.  Originally, this program used a MySQL database to store every game.  This version was converted to use a text file. (<a href="http://jakemanr.pythonanywhere.com//viewdata" target="blank">see data</a>)</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div>
+                    <div class="project-box">
+                        <a href="http://mymoneycharts.com/" target="blank">
+                            <div class="project-img">
+                                <img src="img/budgety.png" />
+                                <div class="project-links">
+                                    <a class="view-link" href="http://mymoneycharts.com/" target="blank">View</a>
+                                    <a class="code-link" href="https://github.com/jakethecoder95/budget-app" target="blank">Code</a>
+                                </div>
+                            </div>
+
+                            <div class="project-des">
+                                <h3>Budgit App</h3>
+                                <p>Budget calculator that uses ChartJS to visualize your spending. This version uses local storage to save ones budget. Mobile friendly version coming soon.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="project-box">
+                        <a href="https://github.com/jakethecoder95/Budgify/tree/master/Budgify" target="blank">
+                            <div class="project-img">
+                                <img src="img/budgety-asp.png" />
+                                <div class="project-links">
+                                    <a class="code-link" href="https://github.com/jakethecoder95/Budgify/tree/master/Budgify" target="blank">Code</a>
+                                </div>
+                            </div>
+
+                            <div class="project-des">
+                                <h3>ASP.NET Budget App</h3>
+                                <p>A new and improved version. All the same features but it is now connected to a SQL database so users can login and access their budget anywhere. I am working to get this published, but the code is working.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="project-box">
+                        <a href="https://codepen.io/jakethecoder95/full/rraPGa" target="blank">
+                            <div class="project-img">
+                                <img src="img/asp-net-core.png" />
+                                <div class="project-links">
+                                    <a class="view-link" href="https://codepen.io/jakethecoder95/full/rraPGa" target="blank">View</a>
+                                    <a class="code-link" href="https://codepen.io/jakethecoder95/pen/rraPGa" target="blank">Code</a>
+                                </div>
+                            </div>
+
+                            <div class="project-des">
+                                <h3>ASP.NET Core Doc.</h3>
+                                <p>This is my techinal documentation project through <a href="https://www.freecodecamp.org/" target="blank">freecodecamp.org</a>'s Responsive Web Design Certificate.  This page is mobile and desktop friendly.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+
+                <div>
+                    <div class="project-box">
+                        <a href="http://jakemanr.pythonanywhere.com/" target="blank">
+                            <div class="project-img">
+                                <img src="img/rps.png" />
+                                <div class="project-links">
+                                    <a class="view-link" href="http://jakemanr.pythonanywhere.com/" target="blank">View</a>
+                                </div>
+                            </div>
+
+                            <div class="project-des">
+                                <h3>Rock, Paper, Scissors</h3>
+                                <p>Flask web application that plays rock, paper, scissors.  Originally, this program used a MySQL database to store every game.  This version was converted to use a text file. (<a href="http://jakemanr.pythonanywhere.com//viewdata" target="blank">see data</a>)</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
