@@ -56,7 +56,7 @@ function addActiveClass(elem){
 }
 
 const toggleArrowDirection = (e) => {
-  e.lastElementChild.lastElementChild.classList.toggle('active-arrow'); 
+  e.firstElementChild.firstElementChild.lastElementChild.classList.toggle('active-arrow'); 
 }
 
 const toggleArrowDirectionSib = (e) => {
