@@ -261,11 +261,13 @@ button:focus {
 .project-box {
   border: solid 3px rgba(204, 204, 204, 0.698);
   transition: 200ms;
-  cursor: pointer;
   padding: 7px;
   width: 350px;
   min-height: 470px;
   margin-bottom: 50px;
+}
+.project-box a {
+  cursor: pointer;
 }
 .project-box:hover {
   border: solid 3px white;
