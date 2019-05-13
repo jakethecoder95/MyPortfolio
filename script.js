@@ -6,12 +6,6 @@ function alignWidth() {
   }
 }
 
-function disabledMessege() {
-  alert(
-    "This link is temporarily disabled until some bugs are fixed.  Thank you for your patience."
-  );
-}
-
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
