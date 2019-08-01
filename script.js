@@ -1,3 +1,5 @@
+$(".date").text(new Date().getFullYear());
+
 function alignWidth() {
   var imageWidth = document.getElementsByClassName("project-img").offsetWidth;
   var headers = document.getElementsByClassName("project-subheader");
