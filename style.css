@@ -372,8 +372,7 @@ button:focus {
   box-shadow: none;
 }
 .skills-row {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  display: flex;
   align-items: center;
   width: 100%;
   margin: 10px 0 0 0;
@@ -394,7 +393,8 @@ button:focus {
 }
 @media (min-width: 993px) {
   .skills {
-    margin: 40px 0 80px 0;
+    margin: 40px auto 80px auto;
+    max-width: 900px;
   }
   .skill-div {
     cursor: pointer;
