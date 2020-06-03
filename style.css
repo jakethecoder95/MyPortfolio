@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url('https://fonts.googleapis.com/css?family=Bangers');
 
 /*** Universal ***/
 div,
@@ -30,12 +30,12 @@ button:focus {
   margin-right: 70px;
 }
 .curly {
-  font-family: "Bangers";
+  font-family: 'Bangers';
   display: inline;
   color: #00fa2a;
 }
 .letters {
-  font-family: "Bangers";
+  font-family: 'Bangers';
   color: #0075fa;
 }
 
@@ -68,7 +68,7 @@ button:focus {
 .jumbotron {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 350px;
   background: linear-gradient(140deg, #0075fa, #00fa2ad5, #0075fa, #00fa2ad5);
   background: -webkit-linear-gradient(
     140deg,
@@ -99,10 +99,8 @@ button:focus {
 }
 /* jumbotron branding */
 .brand {
-  width: 50%;
-  margin: 160px 25%;
+  margin-top: 90px;
 }
-
 .jumbotron h1 {
   font-weight: bold;
   margin-bottom: 30px;
@@ -111,7 +109,7 @@ button:focus {
   margin: 5px;
 }
 .img-brand {
-  background-image: url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/18033365_10211862259607117_2839820417917686277_n.jpg?_nc_cat=0&oh=29c7f175be28d9335d151712fa7441ea&oe=5C12C390");
+  background-image: url('https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/18033365_10211862259607117_2839820417917686277_n.jpg?_nc_cat=0&oh=29c7f175be28d9335d151712fa7441ea&oe=5C12C390');
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -180,7 +178,7 @@ button:focus {
 }
 /* ** About Section ** */
 .main-section {
-  margin-top: 150px;
+  margin: 150px 0;
   min-height: 500px;
 }
 
@@ -240,7 +238,7 @@ button:focus {
   width: 100%;
   min-height: 500px;
   max-height: auto;
-  background: url("https://img00.deviantart.net/f8f2/i/2010/063/e/f/free___background_1_by_3ric_design.png");
+  background: url('https://img00.deviantart.net/f8f2/i/2010/063/e/f/free___background_1_by_3ric_design.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: white;
