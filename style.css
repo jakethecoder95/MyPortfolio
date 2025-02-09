@@ -382,6 +382,18 @@ button:focus {
   width: 120px;
   height: 120px;
 }
+.skill-icon.golang-svg {
+  fill: #00ADD8
+}
+.skill-icon.javascript-svg {
+  fill: #F7DF1E
+}
+.skill-icon.python-svg {
+  fill: #306998
+}
+.skill-icon.cloud-svg {
+  fill: #C0EDFC
+}
 .skills h1 {
   font-size: 30px;
 }
