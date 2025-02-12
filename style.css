@@ -184,8 +184,10 @@ button:focus {
 
 .about {
   display: flex;
-  margin: 170px 12.5% -230px 12.5%;
   width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 0;
 }
 .about-header {
   margin-right: 100px;
