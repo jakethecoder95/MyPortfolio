@@ -176,6 +176,7 @@ button:focus {
     display: none;
   }
 }
+
 /* ** About Section ** */
 .main-section {
   margin: 150px 0;
@@ -184,9 +185,6 @@ button:focus {
 
 .about {
   display: flex;
-  width: 75%;
-  margin-right: auto;
-  margin-left: auto;
   min-height: 0;
 }
 .about-header {
@@ -200,7 +198,8 @@ button:focus {
 }
 @media (max-width: 1225px) {
   .about {
-    margin: 15px 12.5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -213,27 +212,7 @@ button:focus {
     font-size: 17px;
   }
 }
-@media (max-width: 1100px) {
-  .about {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 768px) {
-  .about {
-    margin: 35px 0 0 0;
-    width: 100%;
-  }
-}
-@media (max-width: 550px) {
-  .about {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 333px) {
-  .about {
-    margin-top: 45px;
-  }
-}
+
 /* MyProjects section */
 .projects {
   position: relative;
@@ -550,7 +529,6 @@ button:focus {
 }
 /* ** Connect ** */
 .connect {
-  margin-top: 100px;
   background: #bedcfd5b;
 }
 
